@@ -1,3 +1,5 @@
+
+
 <?php
 /**
  * README
@@ -12,31 +14,31 @@
 require_once __DIR__ . '/vendor/autoload.php';
 
 // Add you bot's username (also to be used for log file names)
-$bot_username = 'username_bot'; // Without "@"
+$bot_username = 'ncv24hhbot'; // Without "@"
 
 try {
     $bot = new TelegramBot\TelegramBotManager\BotManager([
         // Add you bot's API key and name
-        'api_key'      => 'your:bot_api_key',
+        'api_key'      => '447420641:AAEYQdT4C1OgOTeMIAKfM--OImQhPz3knfE',
         'bot_username' => $bot_username,
 
         // Secret key required to access the webhook
-        'secret'       => 'super_secret',
+        'secret'       => 'Bfaschat1234',
 
-        //'webhook'      => [
+        'webhook'      => [
         //    // When using webhook, this needs to be uncommented and defined
-        //    'url' => 'https://your-domain/path/to/manager.php',
+            'url' => 'https://bfasc.herokuapp.com/manager.php',
         //    // Use self-signed certificate
         //    'certificate' => __DIR__ . '/server.crt',
         //    // Limit maximum number of connections
-        //    'max_connections' => 5,
-        //],
+        //  'max_connections' => 5,
+        ],
 
-        //'commands' => [
+        'commands' => [
         //    // Define all paths for your custom commands
-        //    'paths'   => [
-        //        __DIR__ . '/Commands',
-        //    ],
+            'paths'   => [
+                __DIR__ . '/Commands',
+        ],
         //    // Here you can set some command specific parameters
         //    'configs' => [
         //        // e.g. Google geocode/timezone api key for /date command
@@ -45,9 +47,9 @@ try {
         //],
 
         // Define all IDs of admin users
-        //'admins'       => [
-        //    123,
-        //],
+        'admins'       => [
+            197005208,
+        ],
 
         // Enter your MySQL database credentials
         //'mysql'        => [
